@@ -33,6 +33,8 @@ jobs:
 
       - run: git clone https://github.com/sroertgen/vocab.git data/
 
+      - run: rm data/Vocab.ttl
+
       - name: make .env file
         run: echo "BASEURL=/vocab" > .env
 
